@@ -14,7 +14,6 @@ A Cursor extension that provides Arduino IDE-like functionality directly in your
   - Cached library data for faster loading
 - Real-time status monitoring
 - Persistent configuration storage
-- Keyboard shortcuts for quick access
 
 ## Requirements
 
@@ -46,19 +45,6 @@ All commands are available through the Command Palette (`Ctrl+Shift+P`) and can 
 | `Arduino: Select Arduino Port` | List available ports |
 | `Arduino: List Available Boards` | Show all available boards in output |
 | `Arduino: Set Serial Monitor Baudrate` | Set baudrate for serial monitor |
-
-### Keyboard Shortcuts
-
-| Shortcut | Command | Description |
-|----------|---------|-------------|
-| `Ctrl+Alt+U` | Upload | Upload sketch to board |
-| `Ctrl+Alt+C` | Check | Compile and verify code |
-| `Ctrl+Alt+M` | Monitor | Open serial monitor |
-| `Ctrl+Alt+S` | Status | Show current status |
-| `Ctrl+Alt+G` | GUI | Open board/port selection |
-| `Ctrl+Alt+L` | Library | Open library manager |
-
-*Note: Shortcuts only work when editing Arduino files (.ino) or C++ files (.cpp)*
 
 ### Configuration
 
@@ -92,11 +78,11 @@ The serial monitor opens in a dedicated terminal with the configured port and ba
 ## Getting Started
 
 1. Open an Arduino project folder in Cursor
-2. Use `Ctrl+Alt+G` to select your Arduino board and port
+2. Use the Command Palette (`Ctrl+Shift+P`) and search for "Arduino: Arduino GUI" to select your Arduino board and port
 3. Write your Arduino code in `.ino` files
-4. Use `Ctrl+Alt+C` to check your code
-5. Use `Ctrl+Alt+U` to upload to your Arduino
-6. Use `Ctrl+Alt+M` to open the serial monitor
+4. Use the Command Palette to access "Arduino: Check/Compile Arduino Code" to check your code
+5. Use the Command Palette to access "Arduino: Upload to Arduino" to upload to your Arduino
+6. Use the Command Palette to access "Arduino: Open Serial Monitor" to open the serial monitor
 
 ## Troubleshooting
 
